@@ -1,0 +1,35 @@
+# 数据与产物（现场数据不入库，避免把公司业务数据推到公开仓库）
+mock_*.csv
+*.csv
+!模板_*.csv
+
+# 输出目录（图表和报告按需保留：如果 README 引用了图，就把 out/*.png 放行）
+out/
+!out/fig*.png
+
+# 环境与缓存
+.venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# 分析结果放行（本次交付物）
+!out_ads/*.csv
+!out_ads/*.png
+
+# 系统
+.DS_Store
+Thumbs.db
+
+# 报告文件（可在提交前手动调整）
+*_体检报告.md
+report_*.md
+out_venv/
+opencode_review.log
+review_prompt.txt
+作战手册.md
+README_模板.md
+make_mock*.py
+out_ads/README.md
+out_ads/README_final.md
+out_ads/next_steps.md
